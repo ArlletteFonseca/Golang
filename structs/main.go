@@ -32,14 +32,15 @@ func main() {
 		},
 	}
 	//& is an operator you write &and variable name give me the memory address of the value this variable is pointing at
-	jimPointer := &jim
-	jimPointer.updateName("jimmy")
+	//shorcut here jim is a person struct and use *person in updateName
+	jim.updateName("jimmy")
 	jim.print()
 	
 	}
 	/* 
 		turn address into a value with *address
 		turn value into address with &value
+		star in front of type pointer to a person
 	 */
   func (pointerToPerson *person) updateName(newFirstName string) {
 	  //* operator give me the value this memory address is pointing at
