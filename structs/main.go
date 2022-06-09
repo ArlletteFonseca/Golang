@@ -23,6 +23,7 @@ func main() {
 	fmt.Println(alex)
 	//different way to print using %+v to print out "firstname" and "lastName" 
 	fmt.Printf("%+v", alex) */
+	//testing commits
 	jim := person {
 		firstName: "Jim",
 		lastName: "Party",
