@@ -36,7 +36,7 @@ func main() {
 	//shorcut here jim is a person struct and use *person in updateName
 	jim.updateName("jimmy")
 	jim.print()
-	
+	//test//
 	}
 	/* 
 		turn address into a value with *address
