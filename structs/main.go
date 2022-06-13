@@ -23,7 +23,8 @@ func main() {
 	fmt.Println(alex)
 	//different way to print using %+v to print out "firstname" and "lastName" 
 	fmt.Printf("%+v", alex) */
-	//testing commits
+	//USE STRUCTS IF YOU HAVE A CERTAIN SET OF KEYS YOU KNOW YOU WILL BE WORKING WITH
+	//values and keys do not have to be of same type
 	jim := person {
 		firstName: "Jim",
 		lastName: "Party",
