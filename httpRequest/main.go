@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"io"
 )
 
 func main() {
@@ -12,5 +13,10 @@ func main() {
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
-	fmt.Println(resp)
+	io.Copy(os.Stdout, resp.Body)
+}
+func(logWriter) Write(bs []byte)(int, error){
+	fmt.Println(string(bs))
+	fmt.Println("bytes", len(bs))
+	return len(bs), nil
 }
